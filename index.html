@@ -212,37 +212,37 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
-          <img poster="" id="steve" autoplay controls muted loop playsinline height="200%">
+          <img poster="" id="steve" autoplay controls muted loop playsinline>
             <img src="./static/images/fig4_01_1.png"
-             class="interpolation-image"
+             class="interpolation-image enlarged-image"
              alt="Interpolation end reference image."/>
           </img>
         </div>
         <div class="item item-chair-tp">
-          <img poster="" id="chair-tp" autoplay controls muted loop playsinline height="200%">
+          <img poster="" id="chair-tp" autoplay controls muted loop playsinline>
             <img src="./static/images/fig4_01_2.png"
-             class="interpolation-image"
+             class="interpolation-image enlarged-image"
              alt="Interpolation end reference image."/>
           </img>
         </div>
         <div class="item item-shiba">
-          <img poster="" id="shiba" autoplay controls muted loop playsinline height="200%">
+          <img poster="" id="shiba" autoplay controls muted loop playsinline>
             <img src="./static/images/fig3_01_1.png"
-             class="interpolation-image"
+             class="interpolation-image enlarged-image"
              alt="Interpolation end reference image."/>
           </img>
         </div>
         <div class="item item-fullbody">
-          <img poster="" id="fullbody" autoplay controls muted loop playsinline height="200%">
+          <img poster="" id="fullbody" autoplay controls muted loop playsinline>
             <img src="./static/images/fig3_01_2.png"
-             class="interpolation-image"
+             class="interpolation-image enlarged-image"
              alt="Interpolation end reference image."/>
           </img>
         </div>
         <div class="item item-blueshirt">
-          <img poster="" id="blueshirt" autoplay controls muted loop playsinline height="200%">
+          <img poster="" id="blueshirt" autoplay controls muted loop playsinline>
             <img src="./static/images/fig4_sub_00.png"
-             class="interpolation-image"
+             class="interpolation-image enlarged-image"
              alt="Interpolation end reference image."/>
           </img>
         </div>
@@ -250,6 +250,37 @@
     </div>
   </div>
 </section>
+
+<style>
+  .enlarged-image {
+    width: 200%; /* Double the width */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .item {
+    flex: none;
+    width: 100%; /* Ensure only one item is shown at a time */
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+  }
+
+  .item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+  }
+</style>
 
 
 <section class="section">
